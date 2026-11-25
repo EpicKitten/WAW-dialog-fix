@@ -1,14 +1,13 @@
 # waw-dialog-fix
 
 Fixes missing NPC dialog in the single-player game *Call of Duty: World at War* (PC version) when it
-runs on PS5 through [Playden](https://github.com/leolobato/playden-ps5).
+runs on PS5 through [Playden-PS5](https://github.com/leolobato/playden-ps5).
 
 **The symptom:** characters move their mouths but you hear nothing. When you pause and unpause, all
 the missed lines play at once, and then it starts again.
 
-> **Status: experimental.** An earlier logging build with the same workaround fixed the dialog for
-> one player (Playden 0.12.0-beta.5, runtime kit 0.36, Steam version). This smaller build passes its
-> tests on Windows but has **not been confirmed on a PS5 yet**. Remove this note once it has.
+> **Status:** confirmed working on a PS5 by one player (Playden 0.12.0-beta.5, runtime kit 0.36, Steam
+> version). Other versions have not been tested.
 
 ## Install
 
