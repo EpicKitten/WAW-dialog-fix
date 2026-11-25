@@ -56,10 +56,17 @@ With mingw-w64 for 32-bit Windows (`apt install gcc-mingw-w64-i686 make python3`
     make                  # dist/dsound.dll
     make DELAY_MS=100     # a different delay (run make clean first)
     make release          # dist/waw-dialog-fix.zip and dist/SHA256SUMS
+    make logger           # dist/logger/, the diagnostic logging DLL and its tests
     make test             # dist/test/; run CoDWaW.exe and CoDWaWmp.exe there on Windows
 
 The test programs are silent. They need XAudio2 2.0 from the DirectX End-User Runtimes
 (June 2010), and are only named like the game because the fix checks the program's name.
+
+## Source
+
+- `src/` is the fix, and `test/` its test.
+- `tools/` has the logging DLL and analysis scripts used to find the cause: see `tools/README.md`.
+  They are not in the release zip.
 
 ## Licence
 
